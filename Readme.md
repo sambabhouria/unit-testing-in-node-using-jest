@@ -16,17 +16,21 @@ and a rich set of matchers to test your code effectively.
 
 # Topics:
 
+## - Simple test
+
 1. - ![1](/0.png)
 
-1. - Simple test
-     [0](./0.png)
-1. - Testing Asynchronous Code
-     [1](./1.png)
+## - Testing Asynchronous Code
 
-1. - Mocking Functions
-1. - Testing Error Handling
-1. - Running Tests with Coverage
-     [2](./2.png)
+2. - ![1](/1.png)
+
+## - Mocking Functions
+
+## - Testing Error Handling
+
+## - Running Tests with Coverage
+
+3. - ![2](/2.png)
 
 # Conclusion
 
