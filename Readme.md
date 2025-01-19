@@ -20,6 +20,7 @@ and a rich set of matchers to test your code effectively.
 3. - Mocking Functions
 4. - Testing Error Handling
 5. - Running Tests with Coverage
+     [2](/2.png)
 
 # Conclusion
 

@@ -6,12 +6,8 @@ import { getUserData } from '../../services/user'
 
 jest.mock('../../services/fetchData')
 
-type User = {
-  id: number
-  name: string
-}
 test('returns user data for a given userId', async () => {
-  const data = { id: 1, name: 'John Doe' } as User
+  const data = { id: 1, name: 'John Doe' } as const
 
   ;(fetchData as jest.Mock).mockResolvedValue(data)
   const result = await getUserData(1)
