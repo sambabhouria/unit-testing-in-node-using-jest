@@ -46,6 +46,21 @@ Coverage setting can be fixed in jest.config.js
 1. collectCoverage : If this is true, collect and output coverage information.
 1. coverageThreshold: Defines a number for each item, in this code above must be above 90% to pass the test
 
+# Similar frameworks in Jest
+
+## Mocha
+
+Compared to Jest, it is more flexible and can be used with a wide range of libraries,
+It’s highly configurable and customizable to fit.
+It’s also great for NodeJS.
+However, it has no default settings and requires initial setup, It doesn’t provide snapshot testing.
+Jest has an advantage in React than Mocha
+
+## Jasmine
+
+Jasmine is the closest to natural language in the BDD style,and is the most preferred for FrontEnd testing.
+However, it is a bit complicated to write asynchronous tests,does not provide a Document Object Model (DOM).
+
 # Conclusion
 
 Unit testing is an essential practice for building reliable and maintainable Node.js applications.
