@@ -3,6 +3,11 @@
 Unit testing is a crucial aspect of modern software development.
 It helps ensure that individual parts of an application work as expected, making code more reliable and easier to maintain.
 
+In Jest test case can be defined by "test" and "it"
+
+1. - "test" : Specify the purpose of test
+2. - "it" : BDD (Behavior Driven Development) style, specify like natural language using “it should”
+
 # What is Jest?
 
 Jest is a delightful JavaScript testing framework with a focus on simplicity.
@@ -12,15 +17,14 @@ and a rich set of matchers to test your code effectively.
 # Topics:
 
 1. - Simple test
-     [0](/1.png)
-
+     [0](./0.png)
 2. - Testing Asynchronous Code
-     [1](/1.png)
+     [1](./1.png)
 
 3. - Mocking Functions
 4. - Testing Error Handling
 5. - Running Tests with Coverage
-     [2](/2.png)
+     [2](./2.png)
 
 # Conclusion
 

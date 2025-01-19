@@ -42,3 +42,16 @@ test('fetches erroneously data from an API', async () => {
     }
   }
 })
+
+/**
+ * ===> Mock Function
+    Create a mock function to trace calls to other functions, specifying the return value.
+    It can make the test is isolated with dependencies
+ *  1. Make mock function via 'jest.fn()'
+ *  2. Set return value each time a method is called with 'mockReturnValueOnce()'
+ * 3. Verify that the return value set via 'fetchData()' is correct
+ */
+const fetchDataMock = jest.fn().mockReturnValueOnce(10)
+test('Mock Function Test', () => {
+  expect(fetchDataMock()).toBe(10)
+})
