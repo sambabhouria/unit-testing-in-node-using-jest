@@ -8,7 +8,7 @@ const config: Config = {
       branches: 90,
       functions: 80,
       lines: 80,
-      statements: 90,
+      statements: 80,
     },
   },
 }

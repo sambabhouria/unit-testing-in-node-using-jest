@@ -67,3 +67,10 @@ describe('Component', () => {
     })
   })
 })
+
+/**
+ * Mock npm modules
+ */
+jest.mock('uuid', () => ({
+  v4: () => '123',
+}))
