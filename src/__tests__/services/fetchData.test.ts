@@ -2,7 +2,7 @@
  *
  */
 import axios from 'axios'
-import { fetchData } from '../../services/fetchData'
+import { fetchData, fetchDataWitCallBack, fetchDataWithTimeOut } from '../../services/fetchData'
 
 // Mock jest and set the type
 jest.mock('axios')
@@ -54,4 +54,21 @@ test('fetches erroneously data from an API', async () => {
 const fetchDataMock = jest.fn().mockReturnValueOnce(10)
 test('Mock Function Test', () => {
   expect(fetchDataMock()).toBe(10)
+})
+/**
+  1. Defining asynchronous functions with 'fetchData()'
+  2. Asynchronous testing with 'async'
+  3. After waiting, compare with the expected value via expect
+
+ */
+test('Async Test', async () => {
+  const data = await fetchDataWithTimeOut()
+  expect(data).toBe('Data')
+})
+
+test('Async Test', (done) => {
+  fetchDataWitCallBack((data: Function) => {
+    expect(data).toBe('Data')
+    done() // Indicate that the test is complete via 'done()'
+  })
 })

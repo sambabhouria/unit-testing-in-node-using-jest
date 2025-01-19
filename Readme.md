@@ -32,6 +32,20 @@ and a rich set of matchers to test your code effectively.
 
 3. - ![2](/2.png)
 
+# Jest Coverage
+
+    Coverage is a metric that measures how much code has been executed in a test.
+    Jest coverage reports can be generated as follows
+    jest --coverage
+
+It stores Jest coverage reports in HTML format in coveragefolder.
+Coverage setting can be fixed in jest.config.js
+
+3. - ![3](/3.png)
+
+1. collectCoverage : If this is true, collect and output coverage information.
+1. coverageThreshold: Defines a number for each item, in this code above must be above 90% to pass the test
+
 # Conclusion
 
 Unit testing is an essential practice for building reliable and maintainable Node.js applications.

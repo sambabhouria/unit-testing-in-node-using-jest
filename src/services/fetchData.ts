@@ -10,5 +10,22 @@ const fetchData = async (url: string) => {
   const response = await axios.get(url)
   return response.data
 }
+/**
+ *
+ * @returns Testing Asynchronous Code
+ */
+const fetchDataWithTimeOut = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Data')
+    }, 1000)
+  })
+}
 
-export { fetchData }
+const fetchDataWitCallBack = (callback: Function) => {
+  setTimeout(() => {
+    callback('Data')
+  }, 1000)
+}
+
+export { fetchData, fetchDataWitCallBack, fetchDataWithTimeOut }
